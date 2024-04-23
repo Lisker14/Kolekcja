@@ -31,7 +31,7 @@ namespace StudentTestPicker
 
         private async void Add_Class(object sender, EventArgs e)
         {
-            int i = ((Models.AllClasses)BindingContext).AddClass(ClassNumber.Text);
+            int i = ((Models.AllClasses)BindingContext).AddClass(NazwaKolekcji.Text);
             if (i != 0)
             {
                 if (i == 1)

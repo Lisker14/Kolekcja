@@ -30,9 +30,8 @@
                     <DataTemplate>
                         <StackLayout Orientation="Horizontal">
                             <v:Student
-                                StudentName="{Binding Name}"
-                                StudentSurname="{Binding Surname}"
-                            />
+                                StudentName="{Binding Nazwa}" 
+                                StudentSurname="{Binding Opis}"/>
                             <Button Text="X" Clicked="Remove" CommandParameter="{Binding .}" StyleClass="removeButton"/>
                         </StackLayout>
                     </DataTemplate>

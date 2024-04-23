@@ -10,7 +10,7 @@
             <Label Text="Wybierz swoja kolekcje" StyleClass="TitleLabel" FontSize="24" TextColor="#3498db" HorizontalOptions="Center" Margin="0,20,0,0"/>
 
             <HorizontalStackLayout Spacing="10">
-                <Editor HeightRequest="40" Placeholder="Nazwa Kolekcji" x:Name="ClassNumber" StyleClass="editor" WidthRequest="125"/>
+                <Editor HeightRequest="40" Placeholder="Nazwa Kolekcji" x:Name="NazwaKolekcji" StyleClass="editor" WidthRequest="125"/>
                 <Button Text="Dodaj kolekcje " Clicked="Add_Class" StyleClass="addButton" WidthRequest="150"/>
             </HorizontalStackLayout>
 
@@ -27,7 +27,7 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout StyleClass="classFrame" Spacing="5">
-                            <Label Text="{Binding ClassNumber}" StyleClass="classroomName" FontSize="18" />
+                            <Label Text="{Binding NazwaKolekcji}" StyleClass="classroomName" FontSize="18" />
                             <Button Text="Usuń Kolekcje" Clicked="Delete_Class_Button_Clicked" StyleClass="deleteClass" WidthRequest="1000" />
                         </StackLayout>
                     </DataTemplate>
